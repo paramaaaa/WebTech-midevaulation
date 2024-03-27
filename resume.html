@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./script.json">
+
+    </head>
+    <body>
+<nav>
+    <div class="container nav-container">
+        <a href="" class="logo">Parama</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<section id="Resume">
+    <p class="heading-p">Take a Look At My Resume</p>
+    <h1 class="heading">Resume</h1>
+    <div class="container resume-container">
+        <h2>Education:</h2>
+    <p>+2, National School of Sciences, 2022</p>
+    <p>Bachelors, Texas College of Management and IT, Running</p>
+<br>
+    <h2>Work Experience:</h2>
+    <p>1. Frontend Developer<br>
+       - Company: XYZ Tech<br>
+       - Dates: 2022 - 2023<br>
+       - Location: Dillibazar, Kathmandu<br>
+       - Responsibilities:<br>
+         - Web Development<br>
+    </p><br>
+    <h2>Skills:</h2>
+    <p>- Technical Skills: HTML & CSS, Web Development using React, WordPress<br>
+       - Soft Skills: Good Communication , Cooperative, Team Work<br>
+       - Language Proficiency: English, Nepali, Hindi, Newari<br>
+       - Creative Skills: Adobe Photoshop, Adobe Illustrator, Content Creation, Copywriting
+    </p><br>
+    <h2>Projects or Portfolio:</h2>
+    <p>- Foodie Delights: Foodie Delight is a vibrant online platform catering to culinary enthusiasts, offering a delectable array of recipes, restaurant reviews, and gastronomic adventures. With mouthwatering visuals and engaging content, it serves as a haven for food lovers seeking inspiration, guidance, and a taste of culinary delights from around the globe. <br>
+    </p><br>
+    <h2>Contact Information:</h2>
+    <p>- Name: Parama Tuladhar<br>
+       - Email: tuladharparama.1@gmail.com<br>
+       - Phone: 9861922372
+    </p><br><br>
+<h3>Add Work Experience:</h3>
+    <form id="addWorkExperienceForm" onsubmit="addWorkExperience(event)">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required><br>
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required><br>
+
+        <label for="employmentDates">Dates of Employment:</label>
+        <input type="text" id="employmentDates" name="employmentDates" required><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+
+        <label for="responsibilities">Responsibilities:</label><br>
+        <textarea id="responsibilities" name="responsibilities" required></textarea><br>
+
+        <button type="submit">Add Work Experience</button>
+    </form><br>
+
+    <h3>Add Skills:</h3>
+    <form id="addSkillsForm" onsubmit="addSkills(event)">
+        <label for="technicalSkills">Technical Skills:</label>
+        <input type="text" id="technicalSkills" name="technicalSkills" required><br>
+
+        <label for="softSkills">Soft Skills:</label>
+        <input type="text" id="softSkills" name="softSkills" required><br>
+
+        <label for="languageProficiency">Language Proficiency:</label>
+        <input type="text" id="languageProficiency" name="languageProficiency" required><br>
+
+        <label for="certifications">Certifications:</label>
+        <input type="text" id="certifications" name="certifications" required><br>
+
+        <label for="creativeSkills">Creative Skills:</label>
+        <input type="text" id="creativeSkills" name="creativeSkills" required><br>
+
+        <button type="submit">Add Skills</button>
+    </form>

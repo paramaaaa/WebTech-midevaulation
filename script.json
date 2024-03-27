@@ -1,0 +1,41 @@
+function addWorkExperience(event) {
+    event.preventDefault();
+    const jobTitle = document.getElementById("jobTitle").value;
+    const companyName = document.getElementById("companyName").value;
+    const employmentDates = document.getElementById("employmentDates").value;
+    const location = document.getElementById("location").value;
+    const responsibilities = document.getElementById("responsibilities").value;
+    
+    const workExperienceElement = document.createElement("p");
+    workExperienceElement.innerHTML = `
+        <strong>${jobTitle}</strong><br>
+        - Company: ${companyName}<br>
+        - Dates: ${employmentDates}<br>
+        - Location: ${location}<br>
+        - Responsibilities:<br>
+        ${responsibilities.replace(/\n/g, "<br>")}<br><br>
+    `;
+    document.body.appendChild(workExperienceElement);
+    
+    document.getElementById("addWorkExperienceForm").reset();
+}
+
+function addSkills(event) {
+    event.preventDefault();
+    const technicalSkills = document.getElementById("technicalSkills").value;
+    const softSkills = document.getElementById("softSkills").value;
+    const languageProficiency = document.getElementById("languageProficiency").value;
+    const certifications = document.getElementById("certifications").value;
+    const creativeSkills = document.getElementById("creativeSkills").value;
+
+    const skillsElement = document.createElement("p");
+    skillsElement.innerHTML = `
+        - Technical Skills: ${technicalSkills}<br>
+        - Soft Skills: ${softSkills}<br>
+        - Language Proficiency: ${languageProficiency}<br>
+        - Certifications: ${certifications}<br>
+        - Creative Skills: ${creativeSkills}<br>
+    `;
+    document.body.appendChild(skillsElement);
+    document.getElementById("addSkillsForm").reset();
+}
